@@ -11,3 +11,4 @@ Feature: Login to orange hr
     Given I am navigated to the orange hr page
     When I enter invalid credentials
     And I click to login button
+    Then I can not login and error message appears

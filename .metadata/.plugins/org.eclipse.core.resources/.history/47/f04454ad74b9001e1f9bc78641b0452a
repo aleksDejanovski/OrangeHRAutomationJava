@@ -69,7 +69,6 @@ public void i_can_not_login_and_error_message_appears() {
     String actualMessage = loginP.ErrorLoginMessage();
     String expectedMessage = "Invalid credentials";
     Assert.assertEquals(expectedMessage, actualMessage);
-    driver.quit();
 	
 }
 

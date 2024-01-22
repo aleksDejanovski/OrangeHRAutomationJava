@@ -15,7 +15,6 @@ public class loginPage {
 	private By txt_username = By.name("username");
 	private By txt_pass = By.name("password");
 	private By btn_login = By.cssSelector("button[type='submit']");
-	private By lbl_invalidCredentials = By.cssSelector(".oxd-text.oxd-text--p.oxd-alert-content-text");
 	
 	
 	public String titleName()
@@ -33,12 +32,4 @@ public class loginPage {
 	{
 		driver.findElement(btn_login).click();
 	}
-	
-	public String ErrorLoginMessage()
-	{
-		return driver.findElement(lbl_invalidCredentials).getText();
-	}
-	
-	
-	
 }
