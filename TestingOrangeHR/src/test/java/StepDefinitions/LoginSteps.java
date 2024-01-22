@@ -35,7 +35,7 @@ System.setProperty("webdriver.chrome.driver","C:\\Testing123\\testing\\src\\test
 public void i_enter_valid_credentials() throws InterruptedException {
    
     loginP = new loginPage(driver);
-    loginP.EnterUsernameAndPass();
+    loginP.EnterUsernameAndPass("Admin","admin123");
     Thread.sleep(2000);
 }
 
@@ -54,6 +54,14 @@ public void i_am_navigated_to_the_orange_hr_homepage() {
     DashboardPage DashboardPage = new DashboardPage(driver);
     Assert.assertTrue(DashboardPage.ReturnNameOfPage().contains("Dash"));
     driver.quit();
+}
+
+
+@When("I enter invalid credentials")
+public void i_enter_invalid_credentials() throws InterruptedException {
+	loginP = new loginPage(driver);
+    loginP.EnterUsernameAndPass("aas","ssddd");
+    Thread.sleep(2000);
 }
 
 

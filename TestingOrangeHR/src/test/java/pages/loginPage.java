@@ -22,10 +22,10 @@ public class loginPage {
 		return driver.findElement(lbl_titleName).getText();
 	}
 	
-	public void EnterUsernameAndPass()
+	public void EnterUsernameAndPass(String username, String pass)
 	{
-		driver.findElement(txt_username).sendKeys("Admin");
-		driver.findElement(txt_pass).sendKeys("admin123");
+		driver.findElement(txt_username).sendKeys(username);
+		driver.findElement(txt_pass).sendKeys(pass);
 	}
 	
 	public void ClickSubmit()
