@@ -1,0 +1,23 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class loginPage {
+
+	WebDriver driver;
+	
+	public loginPage (WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By lbl_titleName = By.cssSelector(".oxd-text.oxd-text--h5.orangehrm-login-title");
+	
+	
+	
+	public String titleName()
+	{
+		return driver.findElement(lbl_titleName).getText();
+	}
+	
+}

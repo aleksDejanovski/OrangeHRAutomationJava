@@ -1,0 +1,8 @@
+
+
+Feature: Login to orange hr
+
+
+  @tag1
+  Scenario: Login to orange hr using valid credentials
+    Given I want to write a step with precondition
