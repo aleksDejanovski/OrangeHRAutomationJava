@@ -75,5 +75,14 @@ public void i_can_not_login_and_error_message_appears() {
 
 
 
+@When("^I enter (.*) and (.*)$")
+public void user_enters_alek_and_pass12(String username, String pass) throws InterruptedException {
+    // Write code here that turns the phrase above into concrete actions
+	loginP = new loginPage(driver);
+    loginP.EnterUsernameAndPass(username,pass);
+    Thread.sleep(2000);
+}
+
+
 	
 }
