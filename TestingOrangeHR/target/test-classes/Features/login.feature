@@ -27,6 +27,6 @@ Feature: Login to orange hr
 
   Scenario: Login to orange hr using valid username but invalid password
     Given I am navigated to the orange hr page
-    When I enter 'Admin' as a username and 'Pass' as a password
+    When I enter 'Admin' and 'Pass' 
     And I click to login button
     Then I can not login and error message appears

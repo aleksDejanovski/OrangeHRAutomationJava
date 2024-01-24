@@ -1,0 +1,4 @@
+Feature: Manage dashboard page
+
+Scenario: Get my informations
+	Given: I am successfully logged in and navigated to dashboard page

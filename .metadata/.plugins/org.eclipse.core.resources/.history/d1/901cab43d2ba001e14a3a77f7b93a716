@@ -1,0 +1,7 @@
+Feature: Manage dashboard page
+
+
+  @dashboardtests
+Scenario: Get my informations
+	Given: I am successfully logged in and navigated to dashboard page
+	When: I click My info menu

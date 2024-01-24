@@ -1,0 +1,36 @@
+package StepDefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import junit.framework.Assert;
+import pages.DashboardPage;
+import pages.loginPage;
+
+
+public class DashBoardSteps {
+	
+	
+	WebDriver driver = null;
+	DashboardPage DashBoardPage; 
+	
+
+@Given("I am successfully logged in and navigated to dashboard page")
+public void i_am_navigated_to_the_orange_hr_page() {
+    // Write code here that turns the phrase above into concrete actions
+
+	System.setProperty("webdriver.chrome.driver","C:\\Testing123\\testing\\src\\test\\resources\\Drivers\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+	driver.manage().timeouts().pageLoadTimeout(34,TimeUnit.SECONDS);
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	driver.manage().window().maximize();
+	
+	
+	
+	
+}
+}

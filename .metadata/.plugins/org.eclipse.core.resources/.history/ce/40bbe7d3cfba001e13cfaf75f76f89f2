@@ -1,0 +1,14 @@
+package StepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import pages.loginPage;
+
+public class DashBoardSteps {
+	
+	
+	WebDriver driver = null;
+	DashBoardPage DashBoardPage; 
+	
+
+}
